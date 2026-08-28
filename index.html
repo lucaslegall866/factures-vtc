@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Factures VTC</title>
+    <title>Mon QR Code</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center; /* Centre horizontalement */
+            align-items: center;    /* Centre verticalement */
+            height: 100vh;           /* Prend toute la hauteur de l'écran */
+            margin: 0;
+            background-color: #f4f4f4; /* Couleur de fond légère */
+            font-family: sans-serif;
+            flex-direction: column;  /* Aligne les éléments en colonne */
+        }
+        .qr-container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        img {
+            max-width: 300px; /* Force la taille du QR code à 300px maximum */
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-    <h1>ça marche !</h1>         
+
+    <div class="qr-container">
+        <h1>Scannez pour le formulaire</h1>
+        <!-- L'image du QR code -->
+        <img src="qr-formulaire.png" alt="QR Code vers le formulaire">
+    </div>
+
 </body>
 </html>
